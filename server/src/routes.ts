@@ -1,9 +1,8 @@
-import express, {Request, Response} from 'express'
+import express from 'express'
+const makeAnAppointment = require('./controllers/ makeAnAppointment')
 
 const routes = express.Router()
 
-routes.get('/hello/:nome', (req: Request, res: Response) => {
-  return res.send(`Hello ${req.params.nome}`)
-})
+routes.get('/register', makeAnAppointment.create)
 
 export default routes

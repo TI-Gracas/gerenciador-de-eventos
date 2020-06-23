@@ -1,25 +1,32 @@
 import mongoose from 'mongoose'
 
 const AgendamentoSchema = new mongoose.Schema({
-  nome: {
+
+  id: {
+    type:String,
+    required: true,
+    unique: true,
+    
+  },
+  name: {
     type: String,
     required: true
   },
   
-  evento: {
+  eventId: {
     type: String,
     required: true,
   },
 
-  data: {
+  createdAt: {
     type: Date,
-    required: true
-  },
+    default: Date.now,
+},
 
-  horario: {
-    type: String,
-    required: true
-  }
+  updateAt:{
+    type:Date,
+    default: Date.now,
+  },s
 })
 
 const Agendamento = mongoose.model('Agendamento', AgendamentoSchema)
