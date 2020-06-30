@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@types/mongoose": "^5.7.24",
+    "@types/uuidv4": "^5.0.0",
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.19",
     "ts-node": "^8.10.2"

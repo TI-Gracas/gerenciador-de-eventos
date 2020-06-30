@@ -26,7 +26,7 @@ const AgendamentoSchema = new mongoose.Schema({
   updateAt:{
     type:Date,
     default: Date.now,
-  },s
+  },
 })
 
 const Agendamento = mongoose.model('Agendamento', AgendamentoSchema)
