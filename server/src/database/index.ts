@@ -1,8 +1,7 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-mongoose.connect(`${process.env.DB_URL}`, { useUnifiedTopology: true , useNewUrlParser: true})
+mongoose.connect(`${process.env.DB_URL}`, { useUnifiedTopology: true, useNewUrlParser: true });
 
-mongoose.Promise = global.Promise
+mongoose.Promise = global.Promise;
 
-export default mongoose
-
+export default mongoose;
